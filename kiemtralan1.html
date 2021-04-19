@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiểm tra lần 1</title>
+</head>
+<body>
+<!--<script>(bài 1:)
+    let a = [1,2,3,4,6,7,9,10,13];
+    let sum = 0;
+    for (let i = 1; i<a.length; i++){
+        if (a[i]%2==1){
+            sum+=a[i];
+
+        }
+    }
+    document.write("tổng các số lẻ là " + sum);
+
+</script>(bài 2)-->
+<!--<script>
+    let a = parseInt(prompt("nhập số nguyên vào"))
+    let number = 0;
+    for (let i = 1; i<a;i++){
+        if (a%i===0){
+            number+=i;
+        }
+
+    }
+    if (number<=a){
+        document.write(a + "là số hoàn hảo");
+    }else {
+        document.write(a + 'không phải là số hoàn hảo');
+    }
+    </script>(bài 3)-->
+<!--<script>
+    let a = [1,4,5,6,7,8,9,10,38,45,28];
+    for (let i=0; i<a.length; i++){
+        let b = a[i];
+        let number=0;
+        for (let j = 0; j<a[i]; j++){
+            if (a[i]%j==0){
+                number+=j;
+            }
+        }
+        if (number===a[i]){
+            document.write(a[i]+ "là số hoàn hảo đứng ở vị trí" + i + "  ");
+        }
+    }
+
+
+</script>(bài 5)-->
+<!--<button onclick="addClient()">thêm khách hàng</button>
+<table id = "client_list " border="1px"></table>
+
+<script>
+    let clients = ["nguyên van a", "nguyen van b", "nguyen van c"];
+    function displayClient(){
+        let str = "";
+        for (let i =0; i < clients.length; i++){
+            str+= '<tr>' +
+                '<td>' +clients[i]+'</td>'+
+                '<td><button onclick="deleteClient('+i+')">xóa</button></td>'+
+                '<td><button onclick="updateClient('+i+')">sửa</button></td>'+
+                '<tr/>'
+        }
+        document.getElementById("client_list ").innerHTML=str;
+    }
+    displayClient();
+    function addClient(){
+        let client = prompt("tên khách hàng");
+        clients.push(client);
+        displayClient();
+    }
+    function updateClient(i) {
+        clients[i] = prompt("nhập một tên mới");
+        displayClient();
+    }
+    function deleteClient(i){
+        let check = confirm("bạn có muốn xóa khách hàng này không");
+        if (check){
+            clients.splice(i,1);
+            displayClient();
+        }else{
+            alert("thôi không xóa nữa");
+        }
+
+    }
+
+</script>(bài 4)-->
+<!--<script>
+    let linenumber = prompt("Nhập số dòng")
+    for (i=0;i<linenumber;i++){
+        document.write("<hr width ="+i+"%"+"height = 5%>");
+    }
+</script>-->
+</body>
+</html>
